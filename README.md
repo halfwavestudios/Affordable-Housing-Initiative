@@ -1,48 +1,98 @@
-# Affordable-Housing-Initiative
+# 🏠 Affordable Housing Initiative (PHP)
 
-A user-friendly PHP web application designed to help users search for affordable housing service providers by city and housing category. This tool enables quick access to providers offering various tenancy options, including social rented housing, affordable rented housing, and intermediate tenure housing.
-
----
-
-## Features
-
-- Dynamic search interface with dropdowns for **City** and **House Category**
-- Real-time search results without page reloads using AJAX and jQuery
-- Displays provider information including photo, name, address, and category
-- Easy booking system linking users to individual providers
-- Responsive and clean user interface for seamless user experience
+A PHP-based web application that allows users to search for affordable housing service providers by city and housing category. It includes basic login/registration, booking functionality, and admin management tools.
 
 ---
 
-css/              # CSS stylesheets
-images/           # Provider and site images
-include/          # Header, footer, and reusable PHP includes
-js/               # JavaScript files (e.g., jQuery)
-msg/              # Message or notification handling files
-scripts/          # Backend scripts like searchproviders.php
-about.php         # About page
-admin.php         # Admin dashboard or functions
-booking.php       # Booking page for service providers
+## 📌 Features
+
+- 🔍 Search for service providers by city and housing category
+- 📷 Display provider photo, name, and address
+- 📘 Book a provider directly from the listing
+- 👤 User login and registration system
+- 🧑‍💼 Admin dashboard for managing providers and halls
+- ⚙️ AJAX-enabled search with jQuery (no page reload)
+
+---
+
+## 🗂️ Project Structure
+
+css/ # CSS stylesheets
+images/ # Provider images
+include/ # Reusable header/footer files
+js/ # JavaScript (e.g. jQuery)
+msg/ # Message/notification handlers
+scripts/ # Backend scripts (e.g. searchproviders.php)
+
+about.php # About the platform
+admin.php # Admin dashboard or functions
+booking.php # Booking functionality
 deletebooking.php # Script to delete bookings
-deletehall.php    # Script to delete hall entries
-home.php          # User home page
-homepage.html     # Static homepage file
-index.php         # Main landing or entry page
-login.php         # User login script
-logout.php        # User logout script
-main.sql          # Database schema and seed data
-managehall.php    # Hall management page
-provider.php      # Provider profile or management page
-register.php      # User registration page
-Setup Instructions
-Clone or download the repository to your PHP-enabled web server (e.g., XAMPP, WAMP, LAMP).
+deletehall.php # Script to delete halls
+home.php # User home page
+homepage.html # Static homepage
+index.php # Main search interface
+login.php # User login
+logout.php # Logout script
+main.sql # SQL file to set up the database
+managehall.php # Admin panel for managing halls
+provider.php # Provider profile/details
+register.php # New user registration
 
-Import the main.sql file into your MySQL/MariaDB database to set up necessary tables and initial data.
 
-Configure your database connection in your PHP config files (likely in the include/ folder).
+---
 
-Make sure the directories for CSS, JS, images, and PHP scripts are correctly placed in your server root.
+## 🛠️ Setup Instructions
 
-Open index.php in your browser to access the application.
+1. **Clone or download the repository** into your local PHP server directory (e.g., `htdocs/` for XAMPP).
 
-Use the login or registration pages to create users and start interacting with the app.
+2. **Set up the database**:
+   - Open phpMyAdmin (or any SQL tool).
+   - Import the `main.sql` file to create the necessary tables and data.
+
+3. **Configure database connection**:
+   - Edit the connection file (usually inside `include/`) to add your DB credentials.
+
+4. **Ensure file structure** is intact:
+   - CSS, JS, image, and PHP files must be in their appropriate folders.
+
+5. **Run the app**:
+   - Launch your local server (e.g., start Apache in XAMPP).
+   - Visit `http://localhost/index.php` in your browser.
+
+---
+
+## 💡 Usage
+
+- Use the dropdowns on the home/search page to select a **city** and a **housing category**.
+- Click the **Search** button.
+- View matching providers and click **Book** to make a reservation.
+- Login/logout as a user or admin to access more features.
+
+---
+
+## ⚙️ Technologies Used
+
+- PHP
+- MySQL (via `main.sql`)
+- jQuery / AJAX
+- HTML & Bootstrap (for UI)
+
+---
+
+## 📜 License
+
+This project is open-source under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Created by **Halfwave Studios**
+
+---
+
+## 📬 Contributing
+
+Feel free to fork this repo, suggest improvements, or submit pull requests.
+
