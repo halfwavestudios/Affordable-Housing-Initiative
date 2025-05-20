@@ -14,72 +14,35 @@ A user-friendly PHP web application designed to help users search for affordable
 
 ---
 
-## Technologies Used
+css/              # CSS stylesheets
+images/           # Provider and site images
+include/          # Header, footer, and reusable PHP includes
+js/               # JavaScript files (e.g., jQuery)
+msg/              # Message or notification handling files
+scripts/          # Backend scripts like searchproviders.php
+about.php         # About page
+admin.php         # Admin dashboard or functions
+booking.php       # Booking page for service providers
+deletebooking.php # Script to delete bookings
+deletehall.php    # Script to delete hall entries
+home.php          # User home page
+homepage.html     # Static homepage file
+index.php         # Main landing or entry page
+login.php         # User login script
+logout.php        # User logout script
+main.sql          # Database schema and seed data
+managehall.php    # Hall management page
+provider.php      # Provider profile or management page
+register.php      # User registration page
+Setup Instructions
+Clone or download the repository to your PHP-enabled web server (e.g., XAMPP, WAMP, LAMP).
 
-- PHP for backend logic and data handling
-- jQuery for AJAX calls and DOM manipulation
-- Bootstrap (or similar CSS framework) for responsive layout and styling
-- JSON format for client-server data exchange
+Import the main.sql file into your MySQL/MariaDB database to set up necessary tables and initial data.
 
----
+Configure your database connection in your PHP config files (likely in the include/ folder).
 
-## Installation & Setup
+Make sure the directories for CSS, JS, images, and PHP scripts are correctly placed in your server root.
 
-1. Clone or download the repository to your web server environment (XAMPP, WAMP, LAMP, etc.)
-2. Ensure your server supports PHP and has access to a database for provider data.
-3. Place the `haarcascade_frontalface_default.xml` file (if applicable) in the project root or appropriate directory.
-4. Verify directory structure includes:
-/include/header.php
-/include/footer.php
-/js/jquery.js
-/scripts/searchproviders.php
-/images/
+Open index.php in your browser to access the application.
 
-yaml
-Copy
-Edit
-5. Configure the `searchproviders.php` script to connect to your database and query providers based on user input.
-6. Launch the application by navigating to the main PHP page (e.g., `index.php`) in your browser.
-
----
-
-## Usage
-
-- Select a city from the city dropdown.
-- Choose a housing category from the House Category dropdown.
-- Click the **Search** button.
-- View the list of matching housing service providers.
-- Click **Book** to proceed to the provider’s booking page.
-
----
-
-## Customization
-
-- Add or remove cities in the PHP `$cities` array.
-- Modify or extend housing categories in the dropdown menu.
-- Update styling to suit your branding or preferences.
-- Enhance backend logic for improved search and security.
-
----
-
-## Notes
-
-- Ensure secure handling of user inputs and server responses.
-- Implement database sanitization and validation in `searchproviders.php`.
-- Images should be stored in the `/images` directory and referenced correctly.
-
----
-
-## License
-
-MIT License
-
----
-
-## Author
-
-Developed by Halfwave Studios
-
----
-
-Feel free to contribute, report issues, or suggest enhancements!
+Use the login or registration pages to create users and start interacting with the app.
